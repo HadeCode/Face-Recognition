@@ -24,7 +24,7 @@ while True:
 
     a = cv2.waitKey(1)
     if a%256 == 32:
-        img_name = "faceReco{}.jpg"
+        img_name = "faceReco.jpg"
         cv2.imwrite(img_name, frame)
         break
 #spacebar for taking photo
@@ -49,7 +49,7 @@ cv2.imshow("IMG", img2)
 
 
 time.sleep(4)
-os.remove("faceReco0.jpg")
+os.remove("faceReco.jpg")
 
 engine.runAndWait()
 cam.release()
